@@ -6,7 +6,7 @@ from engine.mpm_solver import MPMSolver
 write_to_disk = False
 
 # Try to run on GPU
-ti.init(arch=ti.cuda)
+ti.init(arch=ti.cuda, default_fp=ti.f64)
 
 gui = ti.GUI("Taichi Elements", res=512, background_color=0x112F41)
 
